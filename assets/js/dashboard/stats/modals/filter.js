@@ -204,7 +204,15 @@ class FilterModal extends React.Component {
   }
 
   renderFilterInputs() {
-    return FILTER_GROUPS[this.state.selectedFilterGroup].map((filter) => (
+    const inputs = FILTER_GROUPS[this.state.selectedFilterGroup].filter((inputName) => {
+      if (['region', 'city'].includes(inputName)) {
+        return this.props.site.cities
+      }
+
+      return true
+    })
+
+    return inputs.map((filter) => (
       <div className="mt-4" key={filter}>
         <div className="text-sm font-medium text-gray-700 dark:text-gray-300">{ formattedFilters[filter] }</div>
         <div className="flex items-start mt-1">

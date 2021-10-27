@@ -109,8 +109,8 @@ export default class Locations extends React.Component {
             <ul className="flex font-medium text-xs text-gray-500 dark:text-gray-400 space-x-2">
               { this.renderPill('Map', 'map') }
               { this.renderPill('Countries', 'countries') }
-              { this.renderPill('Regions', 'regions') }
-              { this.renderPill('Cities', 'cities') }
+              { this.props.site.cities && this.renderPill('Regions', 'regions') }
+              { this.props.site.cities && this.renderPill('Cities', 'cities') }
             </ul>
           </div>
           { this.renderContent() }

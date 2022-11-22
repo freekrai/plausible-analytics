@@ -10,7 +10,7 @@
     <title>PlausibleWeb.EmailView — Plausible v0.0.1</title>
     <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
 
-    <script src="dist/sidebar_items-04b5f1736b.js"></script>
+    <script src="dist/sidebar_items-635fe6ee6b.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -138,14 +138,6 @@ Plausible
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#admin_email/0" translate="no">admin_email()</a>
-
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
           <a href="#base_domain/0" translate="no">base_domain()</a>
 
         </div>
@@ -155,6 +147,14 @@ Plausible
       <div class="summary-row">
         <div class="summary-signature">
           <a href="#date_format/1" translate="no">date_format(date)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#greet_recipient/1" translate="no">greet_recipient(arg1)</a>
 
         </div>
 
@@ -187,14 +187,6 @@ Plausible
           <div class="summary-synopsis"><p>Callback invoked when no template is found.
 By default it raises but can be customized
 to render a particular template.</p></div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#user_salutation/1" translate="no">user_salutation(user)</a>
-
-        </div>
 
       </div>
 
@@ -234,28 +226,6 @@ Functions
 <p>The resource name, as an atom, for this view</p>
   </section>
 </section>
-<section class="detail" id="admin_email/0">
-
-  <div class="detail-header">
-    <a href="#admin_email/0" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">admin_email()</h1>
-
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L4" class="view-source" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
 <section class="detail" id="base_domain/0">
 
   <div class="detail-header">
@@ -265,7 +235,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">base_domain()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L12" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L8" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -287,7 +257,29 @@ Functions
     </a>
     <h1 class="signature" translate="no">date_format(date)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L24" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L18" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="greet_recipient/1">
+
+  <div class="detail-header">
+    <a href="#greet_recipient/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">greet_recipient(arg1)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L12" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -309,7 +301,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">plausible_url()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L8" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L4" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -374,28 +366,6 @@ Functions
 <p>Callback invoked when no template is found.
 By default it raises but can be customized
 to render a particular template.</p>
-  </section>
-</section>
-<section class="detail" id="user_salutation/1">
-
-  <div class="detail-header">
-    <a href="#user_salutation/1" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">user_salutation(user)</h1>
-
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/email_view.ex#L16" class="view-source" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
   </section>
 </section>
 

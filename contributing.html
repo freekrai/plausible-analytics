@@ -10,7 +10,7 @@
     <title>Contributing — Plausible v0.0.1</title>
     <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
 
-    <script src="dist/sidebar_items-04b5f1736b.js"></script>
+    <script src="dist/sidebar_items-635fe6ee6b.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -118,15 +118,15 @@ Plausible
   <a href="#start-the-environment" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
   <p class="sr-only">start-the-environment</p>
   </a>
-  Start the environment:
+  Start the environment
 </h3>
-<ol><li>Run both <code class="inline">make postgres</code> and <code class="inline">make clickhouse</code>.</li><li>You can set up everything with <code class="inline">make install</code>, alternatively run each command separately:<ol><li>Run <a href="https://hexdocs.pm/mix/Mix.Tasks.Deps.Get.html"><code class="inline">mix deps.get</code></a>. This will download the required Elixir dependencies.</li><li>Run <a href="https://hexdocs.pm/ecto/3.8.4/Mix.Tasks.Ecto.Create.html"><code class="inline">mix ecto.create</code></a>. This will create the required databases in both Postgres and Clickhouse.</li><li>Run <a href="https://hexdocs.pm/ecto_sql/3.8.3/Mix.Tasks.Ecto.Migrate.html"><code class="inline">mix ecto.migrate</code></a> to build the database schema.</li><li>Run <code class="inline">npm ci --prefix assets</code> to install the required client-side dependencies.</li><li>Run <code class="inline">npm ci --prefix tracker</code> to install the required tracker dependencies.</li><li>Run <code class="inline">npm run deploy --prefix tracker</code> to generate tracker files in <code class="inline">priv/tracker/js</code></li><li>Run <code class="inline">mix download_country_database</code> to fetch geolocation database</li></ol></li><li>Run <code class="inline">make server</code> or <a href="https://hexdocs.pm/phoenix/1.6.6/Mix.Tasks.Phx.Server.html"><code class="inline">mix phx.server</code></a> to start the Phoenix server.</li><li>The system is now available on <code class="inline">localhost:8000</code>.</li></ol><h3 id="creating-an-account" class="section-heading">
-  <a href="#creating-an-account" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
-  <p class="sr-only">creating-an-account</p>
+<ol><li>Run both <code class="inline">make postgres</code> and <code class="inline">make clickhouse</code>.</li><li>You can set up everything with <code class="inline">make install</code>, alternatively run each command separately:<ol><li>Run <a href="https://hexdocs.pm/mix/Mix.Tasks.Deps.Get.html"><code class="inline">mix deps.get</code></a>. This will download the required Elixir dependencies.</li><li>Run <a href="https://hexdocs.pm/ecto/3.8.4/Mix.Tasks.Ecto.Create.html"><code class="inline">mix ecto.create</code></a>. This will create the required databases in both Postgres and Clickhouse.</li><li>Run <a href="https://hexdocs.pm/ecto_sql/3.8.3/Mix.Tasks.Ecto.Migrate.html"><code class="inline">mix ecto.migrate</code></a> to build the database schema.</li><li>Run <code class="inline">mix run priv/repo/seeds.exs</code> to seed the database. Check the <a href="#Seeds">Seeds</a> section for more.</li><li>Run <code class="inline">npm ci --prefix assets</code> to install the required client-side dependencies.</li><li>Run <code class="inline">npm ci --prefix tracker</code> to install the required tracker dependencies.</li><li>Run <code class="inline">npm run deploy --prefix tracker</code> to generate tracker files in <code class="inline">priv/tracker/js</code></li><li>Run <code class="inline">mix download_country_database</code> to fetch geolocation database</li></ol></li><li>Run <code class="inline">make server</code> or <a href="https://hexdocs.pm/phoenix/1.6.6/Mix.Tasks.Phx.Server.html"><code class="inline">mix phx.server</code></a> to start the Phoenix server.</li><li>The system is now available on <code class="inline">localhost:8000</code>.</li></ol><h3 id="seeds" class="section-heading">
+  <a href="#seeds" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
+  <p class="sr-only">seeds</p>
   </a>
-  Creating an account
+  Seeds
 </h3>
-<ol><li>Navigate to <code class="inline">http://localhost:8000/register</code> and fill in the form.</li><li>Fill in the rest of the forms and for the domain use <code class="inline">dummy.site</code></li><li>Skip the JS snippet and click start collecting data.</li><li>Run <code class="inline">mix send_pageview</code> from the terminal to generate a fake pageview event for the dummy site.</li><li>You should now be all set!</li></ol><h3 id="stopping-docker-containers" class="section-heading">
+<p>You can optionally seed your database to automatically create an account and a site with stats:</p><ol><li>Run <code class="inline">mix run priv/repo/seeds.exs</code> to seed the database.</li><li>Start the server with <code class="inline">make server</code> and navigate to <code class="inline">http://localhost:8000/login</code>.</li><li>Log in with the following e-mail and password combination: <code class="inline">user@plausible.test</code> and <code class="inline">plausible</code>.</li><li>You should now have a <code class="inline">dummy.site</code> site with generated stats.</li></ol><p>Alternatively, you can manually create a new account:</p><ol><li>Navigate to <code class="inline">http://localhost:8000/register</code> and fill in the form.</li><li>Fill in the rest of the forms and for the domain use <code class="inline">dummy.site</code></li><li>Skip the JS snippet and click start collecting data.</li><li>Run <code class="inline">mix send_pageview</code> from the terminal to generate a fake pageview event for the dummy site.</li><li>You should now be all set!</li></ol><h3 id="stopping-docker-containers" class="section-heading">
   <a href="#stopping-docker-containers" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
   <p class="sr-only">stopping-docker-containers</p>
   </a>

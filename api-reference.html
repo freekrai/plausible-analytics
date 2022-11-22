@@ -10,7 +10,7 @@
     <title>API Reference — Plausible v0.0.1</title>
     <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
 
-    <script src="dist/sidebar_items-04b5f1736b.js"></script>
+    <script src="dist/sidebar_items-635fe6ee6b.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -240,13 +240,6 @@ period.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Plausible.Billing.Subscription.html" translate="no">Plausible.Billing.Subscription</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
     <a href="Plausible.ClickhouseEvent.html" translate="no">Plausible.ClickhouseEvent</a>
 
   </div>
@@ -275,7 +268,24 @@ period.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.DataCase.html" translate="no">Plausible.DataCase</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module defines the setup for tests requiring
+access to the application's data layer.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Event.WriteBuffer.html" translate="no">Plausible.Event.WriteBuffer</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Factory.html" translate="no">Plausible.Factory</a>
 
   </div>
 
@@ -297,6 +307,13 @@ period.</p></div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="Plausible.Google.Api.html" translate="no">Plausible.Google.Api</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Google.Api.Mock.html" translate="no">Plausible.Google.Api.Mock</a>
 
   </div>
 
@@ -386,8 +403,14 @@ maximum size, defined by <code class="inline">max_buffer_size/0</code>.</p></div
   </div>
 
     <div class="summary-synopsis"><p><a href="https://hexdocs.pm/opentelemetry/readme.html#samplers">Custom OpenTelemetry sampler</a>
-implementation that samples 1% of the <code class="inline">/api/event</code> traces, but records 100% of
-other traces.</p></div>
+implementation that ignores <code class="inline">/api/event</code> traces, while recording 100% of other traces.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.PaddleApi.Mock.html" translate="no">Plausible.PaddleApi.Mock</a>
+
+  </div>
 
 </div>
 <div class="summary-row">
@@ -472,6 +495,28 @@ other traces.</p></div>
 
   </div>
 
+    <div class="summary-synopsis"><p>Site schema</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.Cache.html" translate="no">Plausible.Site.Cache</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A &quot;sites by domain&quot; caching interface.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.Cache.Warmer.html" translate="no">Plausible.Site.Cache.Warmer</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A periodic cache warmer.
+Queries all Sites from Postgres, every <code class="inline">interval</code> and pre-populates the cache.
+After each run the process is hibernated, triggering garbage collection.</p></div>
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -493,6 +538,8 @@ other traces.</p></div>
 
   </div>
 
+    <div class="summary-synopsis"><p>Embedded schema for Google Analytics imports</p></div>
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -506,6 +553,17 @@ other traces.</p></div>
     <a href="Plausible.Site.MonthlyReport.html" translate="no">Plausible.Site.MonthlyReport</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.RateLimiter.html" translate="no">Plausible.Site.RateLimiter</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Thin wrapper around Hammer for rate limiting domain-specific events
+during the ingestion phase. Currently there are two policies
+on which the <code class="inline">allow/2</code> function operates</p></div>
 
 </div>
 <div class="summary-row">
@@ -631,6 +689,15 @@ other traces.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Stats.Interval.html" translate="no">Plausible.Stats.Interval</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Collection of functions to work with intervals.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Stats.Props.html" translate="no">Plausible.Stats.Props</a>
 
   </div>
@@ -646,6 +713,20 @@ other traces.</p></div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="Plausible.Stats.Timeseries.html" translate="no">Plausible.Stats.Timeseries</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Test.ClickhouseSetup.html" translate="no">Plausible.Test.ClickhouseSetup</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.TestUtils.html" translate="no">Plausible.TestUtils</a>
 
   </div>
 
@@ -855,13 +936,6 @@ other traces.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="PlausibleWeb.AutoAuthPlug.html" translate="no">PlausibleWeb.AutoAuthPlug</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
     <a href="PlausibleWeb.BillingController.html" translate="no">PlausibleWeb.BillingController</a>
 
   </div>
@@ -886,6 +960,16 @@ other traces.</p></div>
     <a href="PlausibleWeb.Captcha.html" translate="no">PlausibleWeb.Captcha</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.ConnCase.html" translate="no">PlausibleWeb.ConnCase</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module defines the test case to be used by
+tests that require setting up a connection.</p></div>
 
 </div>
 <div class="summary-row">
@@ -949,6 +1033,15 @@ to the Plausible frontend.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="PlausibleWeb.FirstLaunchPlug.html" translate="no">PlausibleWeb.FirstLaunchPlug</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Redirects first-launch users to registration page.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="PlausibleWeb.FormHelpers.html" translate="no">PlausibleWeb.FormHelpers</a>
 
   </div>
@@ -978,13 +1071,6 @@ to the Plausible frontend.</p></div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="PlausibleWeb.PageController.html" translate="no">PlausibleWeb.PageController</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="PlausibleWeb.PageView.html" translate="no">PlausibleWeb.PageView</a>
 
   </div>
 

@@ -10,7 +10,7 @@
     <title>Plausible.Release — Plausible v0.0.1</title>
     <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
 
-    <script src="dist/sidebar_items-04b5f1736b.js"></script>
+    <script src="dist/sidebar_items-635fe6ee6b.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -152,14 +152,6 @@ Plausible
 
       <div class="summary-row">
         <div class="summary-signature">
-          <a href="#init_admin/0" translate="no">init_admin()</a>
-
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
           <a href="#migrate/0" translate="no">migrate()</a>
 
         </div>
@@ -177,6 +169,22 @@ Plausible
       <div class="summary-row">
         <div class="summary-signature">
           <a href="#seed/0" translate="no">seed()</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#selfhost?/0" translate="no">selfhost?()</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#should_be_first_launch?/0" translate="no">should_be_first_launch?()</a>
 
         </div>
 
@@ -205,7 +213,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">configure_ref_inspector()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L72" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L63" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -227,7 +235,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">configure_ua_inspector()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L77" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L68" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -249,29 +257,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">createdb()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L44" class="view-source" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="init_admin/0">
-
-  <div class="detail-header">
-    <a href="#init_admin/0" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">init_admin()</h1>
-
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L10" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L35" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -293,7 +279,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">migrate()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L30" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L21" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -315,7 +301,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">rollback()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L54" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L45" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -337,7 +323,57 @@ Functions
     </a>
     <h1 class="signature" translate="no">seed()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L36" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L27" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="selfhost?/0">
+
+  <div class="detail-header">
+    <a href="#selfhost?/0" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">selfhost?()</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L13" class="view-source" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> selfhost?() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="should_be_first_launch?/0">
+
+  <div class="detail-header">
+    <a href="#should_be_first_launch?/0" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">should_be_first_launch?()</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_release.ex#L17" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>

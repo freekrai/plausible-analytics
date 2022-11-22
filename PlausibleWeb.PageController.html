@@ -10,7 +10,7 @@
     <title>PlausibleWeb.PageController — Plausible v0.0.1</title>
     <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
 
-    <script src="dist/sidebar_items-04b5f1736b.js"></script>
+    <script src="dist/sidebar_items-635fe6ee6b.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -132,6 +132,8 @@ Plausible
 
         </div>
 
+          <div class="summary-synopsis"><p>The root path is never accessible in Plausible.Cloud because it is handled by the upstream reverse proxy.</p></div>
+
       </div>
 
   </div>
@@ -157,7 +159,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">index(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/page_controller.ex#L6" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/page_controller.ex#L10" class="view-source" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -167,7 +169,7 @@ Functions
 
   <section class="docstring">
 
-
+<p>The root path is never accessible in Plausible.Cloud because it is handled by the upstream reverse proxy.</p><p>This controller action is only ever triggered in self-hosted Plausible. It redirects the user to /login where <a href="PlausibleWeb.RequireLoggedOutPlug.html"><code class="inline">PlausibleWeb.RequireLoggedOutPlug</code></a> plug kicks in. If they are already logged in, they are redirected to /sites, otherwise they'll see the /login page.</p>
   </section>
 </section>
 

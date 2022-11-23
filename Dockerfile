@@ -47,7 +47,7 @@ COPY rel rel
 RUN mix release plausible
 
 # Main Docker Image
-FROM alpine:3.15.3
+FROM alpine:3.17.0
 LABEL maintainer="tckb <tckb@tgrthi.me>"
 
 ARG BUILD_METADATA={}
